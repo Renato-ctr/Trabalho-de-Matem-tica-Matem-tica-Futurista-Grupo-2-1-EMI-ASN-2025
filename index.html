@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemática - Área do Triângulo e Trapézio</title>
+  <link rel="icon" type="image/x-icon" href="/image/favicon (3).ico" sizes="512x512">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <canvas id="backgroundAnimationCanvas" class="background-animation"></canvas>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Matemática Futurista</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#triangulo">Triângulo</a></li>
+            <li><a href="#trapezio">Trapézio</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Área do Triângulo e Trapézio</h2>
+      <p>Explore os conceitos fundamentais de geometria de forma interativa e envolvente. Aprenda a calcular áreas de triângulos e trapézios através de explicações detalhadas, exemplos práticos e ferramentas interativas.</p>
+
+      <div class="guide-container">
+        <div class="guide-avatar">👩‍🏫</div>
+        <div class="guide-message">
+          <p>Olá! Eu sou a Prof. Deltiane, sua guia neste mundo da geometria. Vamos explorar juntos os conceitos de área do triângulo e trapézio!</p>
+          <div class="guide-name">Prof. Deltiane</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="introducao">
+    <div class="container">
+      <h2 class="section-title">Introdução às Áreas</h2>
+
+      <div class="content-card">
+        <h3>O que é Área?</h3>
+        <p>A área é a medida da superfície de uma figura plana. Em outras palavras, é a quantidade de espaço que uma figura ocupa em um plano. A unidade de medida de área é sempre uma unidade de comprimento ao quadrado (como cm², m², km²).</p>
+
+        <p>O cálculo de áreas é fundamental em diversas áreas do conhecimento, desde a arquitetura e engenharia até a física e a computação gráfica. Neste site, focaremos em duas figuras geométricas importantes: o triângulo e o trapézio.</p>
+
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>Lembre-se: área é diferente de perímetro! Enquanto a área mede a superfície, o perímetro mede o contorno da figura.</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="triangulo">
+    <div class="container">
+      <h2 class="section-title">Área do Triângulo</h2>
+
+      <div class="content-card">
+        <h3>O que é um Triângulo?</h3>
+        <p>Um triângulo é um polígono de três lados e três ângulos. É uma das figuras geométricas mais básicas e importantes, sendo a base para o estudo de muitas outras formas.</p>
+
+        <p>Os triângulos podem ser classificados de acordo com:</p>
+        <ul>
+          <li><strong>Lados:</strong> equilátero (três lados iguais), isósceles (dois lados iguais) e escaleno (três lados diferentes)</li>
+          <li><strong>Ângulos:</strong> acutângulo (três ângulos agudos), retângulo (um ângulo reto) e obtusângulo (um ângulo obtuso)</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3>Fórmula da Área do Triângulo</h3>
+        <p>A área de um triângulo pode ser calculada usando a fórmula:</p>
+
+        <div class="formula-box">
+          <div class="formula">A = (b × h) / 2</div>
+          <p>Onde:</p>
+          <ul>
+            <li><strong>A</strong> é a área do triângulo</li>
+            <li><strong>b</strong> é a base do triângulo</li>
+            <li><strong>h</strong> é a altura do triângulo (medida perpendicular à base)</li>
+          </ul>
+        </div>
+
+        <div class="visualization">
+          <div class="triangle-container">
+            <div class="triangle-formula">Área = (b × h) / 2</div>
+            <div class="triangle-isosceles"></div>
+            <div class="triangle-base"></div>
+            <div class="triangle-height"></div>
+            <div class="triangle-labels">
+              <div class="label-b">b</div>
+              <div class="label-h">h</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <h4>Exemplo Prático:</h4>
+          <p>Considere um triângulo com base de 8 cm e altura de 5 cm. Para calcular sua área:</p>
+          <p>A = (8 × 5) / 2 = 40 / 2 = 20 cm²</p>
+        </div>
+
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>A altura deve ser sempre perpendicular à base, mesmo que isso signifique que a altura esteja fora do triângulo, como em triângulos obtusângulos!</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Outras Fórmulas para Calcular a Área do Triângulo</h3>
+        <p>Além da fórmula básica, existem outras maneiras de calcular a área de um triângulo:</p>
+
+        <h4>Fórmula de Heron</h4>
+        <p>Quando conhecemos os três lados do triângulo (a, b, c), podemos usar a fórmula de Heron:</p>
+
+        <div class="formula-box">
+          <div class="formula">A = √[s(s - a)(s - b)(s - c)]</div>
+          <p>Onde <strong>s</strong> é o semiperímetro: s = (a + b + c) / 2</p>
+        </div>
+
+        <h4>Usando Trigonometria</h4>
+        <p>Se conhecemos dois lados e o ângulo entre eles, podemos usar:</p>
+
+        <div class="formula-box">
+          <div class="formula">A = (1/2) × a × b × sen(θ)</div>
+          <p>Onde <strong>a</strong> e <strong>b</strong> são dois lados e <strong>θ</strong> é o ângulo entre eles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trapezio">
+    <div class="container">
+      <h2 class="section-title">Área do Trapézio</h2>
+
+      <div class="content-card">
+        <h3>O que é um Trapézio?</h3>
+        <p>Um trapézio é um quadrilátero que possui pelo menos um par de lados paralelos. Esses lados paralelos são chamados de bases do trapézio.</p>
+
+        <p>Os trapézios podem ser classificados em:</p>
+        <ul>
+          <li><strong>Trapézio isósceles:</strong> os lados não paralelos são congruentes</li>
+          <li><strong>Trapézio escaleno:</strong> todos os lados têm medidas diferentes</li>
+          <li><strong>Trapézio retângulo:</strong> possui dois ângulos retos</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3>Fórmula da Área do Trapézio</h3>
+        <p>A área de um trapézio pode ser calculada usando a fórmula:</p>
+
+        <div class="formula-box">
+          <div class="formula">A = [(B + b) × h] / 2</div>
+          <p>Onde:</p>
+          <ul>
+            <li><strong>A</strong> é a área do trapézio</li>
+            <li><strong>B</strong> é a base maior do trapézio</li>
+            <li><strong>b</strong> é a base menor do trapézio</li>
+            <li><strong>h</strong> é a altura do trapézio (distância entre as bases)</li>
+          </ul>
+        </div>
+
+        <div class="visualization">
+          <div class="trapezoid-container">
+            <div class="trapezoid-formula">Área = (B + b) × h / 2</div>
+            <div class="trapezoid-shape">
+              <div class="trapezoid-base-b"></div>
+              <div class="trapezoid-base-B"></div>
+              <div class="trapezoid-height"></div>
+              <div class="trapezoid-labels">
+                <div class="label-trapezoid-b">b</div>
+                <div class="label-trapezoid-B">B</div>
+                <div class="label-trapezoid-h">h</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <h4>Exemplo Prático:</h4>
+          <p>Considere um trapézio com base maior de 10 cm, base menor de 6 cm e altura de 4 cm. Para calcular sua área:</p>
+          <p>A = [(10 + 6) × 4] / 2 = (16 × 4) / 2 = 64 / 2 = 32 cm²</p>
+        </div>
+
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>Lembre-se: as bases são sempre os lados paralelos, e a altura é a distância perpendicular entre essas bases!</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Relação entre Triângulo e Trapézio</h3>
+        <p>Um trapézio pode ser dividido em dois triângulos traçando uma de suas diagonais. Isso nos permite calcular a área de um trapézio somando as áreas desses dois triângulos.</p>
+
+        <p>Se traçarmos a diagonal de um trapézio, obtemos dois triângulos que compartilham a mesma altura (a altura do trapézio). A área do trapézio será então:</p>
+
+        <div class="formula-box">
+          <div class="formula">A = A₁ + A₂ = (B × h)/2 + (b × h)/2 = [(B + b) × h]/2</div>
+          <p>Que é exatamente a fórmula que já conhecemos!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="simulador">
+    <div class="container">
+      <h2 class="section-title">Simulador de Áreas</h2>
+
+      <div class="interactive-tool">
+        <h3>Calculadora de Área do Triângulo</h3>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="base-triangulo">Base (b):</label>
+            <input type="number" id="base-triangulo" placeholder="Digite a base">
+          </div>
+          <div class="input-field">
+            <label for="altura-triangulo">Altura (h):</label>
+            <input type="number" id="altura-triangulo" placeholder="Digite a altura">
+          </div>
+        </div>
+        <button id="calcular-triangulo">Calcular Área</button>
+        <button type="button" id="limpar-triangulo" style="background: transparent; border: 1px solid var(--accent-light); margin-left: 10px;">Limpar</button>
+        <div class="result" id="resultado-triangulo"></div>
+      </div>
+
+      <div class="interactive-tool">
+        <h3>Calculadora de Área do Trapézio</h3>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="base-maior">Base Maior (B):</label>
+            <input type="number" id="base-maior" placeholder="Digite a base maior">
+          </div>
+          <div class="input-field">
+            <label for="base-menor">Base Menor (b):</label>
+            <input type="number" id="base-menor" placeholder="Digite a base menor">
+          </div>
+
+          <div class="input-field">
+            <label for="altura-trapezio">Altura (h):</label>
+            <input type="number" id="altura-trapezio" placeholder="Digite a altura">
+          </div>
+        </div>
+        <button id="calcular-trapezio">Calcular Área</button>
+        <button type="button" id="limpar-trapezio" style="background: transparent; border: 1px solid var(--accent-light); margin-left: 10px;">Limpar</button>
+        <div class="result" id="resultado-trapezio"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <h2 class="section-title">Quiz de Conhecimento</h2>
+
+      <div class="quiz-container">
+        <p>Teste seus conhecimentos sobre área do triângulo e trapézio com este quiz de 25 questões!</p>
+
+        <div class="quiz-questions" id="quiz-questions">
+        </div>
+
+        <button id="verificar-respostas">Verificar Respostas</button>
+
+        <div class="quiz-results" id="quiz-results">
+          <h3>Resultado do Quiz</h3>
+          <p id="score-text">Você acertou X de 25 questões!</p>
+          <p id="performance-message"></p>
+          <button id="reiniciar-quiz">Reiniciar Quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Matemática Futurista</div>
+        <p>© Todos os Direitos reservados ao Grupo2 1°EMI-IPI-2025-ASN</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
