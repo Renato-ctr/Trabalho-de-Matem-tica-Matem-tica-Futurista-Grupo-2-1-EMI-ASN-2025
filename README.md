@@ -1,0 +1,1 @@
+# Trabalho-de-Matem-tica-Matem-tica-Futurista-Grupo-2-1-EMI-ASN-2025
